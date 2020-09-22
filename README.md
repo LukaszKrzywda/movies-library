@@ -1,8 +1,9 @@
 # AngularApp
 
 Założeniem projektu było stworzenie biblioteki filmów. 
-Użytkownik po zalogowaniu się ma możliwość przeglądania bazy filmów w formie tabeli lub kafelek.
-Administrator po zalogowaniu się ma możliwość dodawania i usuwania filmów z bazy danych. 
+Użytkownik po zalogowaniu się ma możliwość przeglądania bazy filmów w formie tabeli lub kafelek jak również eksportowania do pliku xlsx. Administrator po zalogowaniu się ma możliwość dodawania i usuwania filmów z bazy danych. 
+
+
 
 ## Development server
 
