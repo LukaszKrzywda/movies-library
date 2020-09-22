@@ -1,0 +1,17 @@
+<mat-card class="details_card">
+  <mat-card-header>
+    <mat-card-title>Szczegóły filmu</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p><b>Id:</b> {{ movie.id }}</p>
+
+    <p><b>Tytuł:</b> {{ movie.title }}</p>
+    <p><b>Reżyser:</b> {{ movie.director }}</p>
+    <p><b>Fabuła:</b> {{ movie.plot }}</p>
+    <p><b>Rok produkcji:</b> {{ movie.date }}</p>
+    <p><b>Ocena:</b> {{ movie.mark }}</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button><a (click)="previousPage()">Powrót</a></button>
+  </mat-card-actions>
+</mat-card>

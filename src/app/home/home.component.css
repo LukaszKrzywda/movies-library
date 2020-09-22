@@ -1,0 +1,12 @@
+.example-button-row button,
+.example-button-row a {
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+#logout {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}

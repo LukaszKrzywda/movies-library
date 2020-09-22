@@ -1,0 +1,76 @@
+<button mat-raised-button id="btn_back">
+  <a routerLink="/home">Back</a>
+</button>
+
+<mat-card class="add_card">
+  <form
+    #form="ngForm"
+    autocomplete="off"
+    (submit)="onSubmit(form)"
+    class="add_form"
+  >
+    <div class="container-fluid">
+      <h2 class="heading_form">Dodaj nowy film</h2>
+      <br />
+      <input type="hidden" name="Id" [value]="service.formData.Id" />
+      <input
+        type="text"
+        name="Title"
+        #Title="ngModel"
+        [(ngModel)]="service.formData.Title"
+        class="form-control"
+        placeholder="Title"
+        required
+        autofocus
+      />
+      <br />
+      <input
+        type="text"
+        name="Director"
+        #Director="ngModel"
+        [(ngModel)]="service.formData.Director"
+        class="form-control"
+        placeholder="Director"
+        required
+        autofocus
+      />
+      <br />
+      <input
+        type="text"
+        name="Plot"
+        #Plot="ngModel"
+        [(ngModel)]="service.formData.Plot"
+        class="form-control"
+        placeholder="Plot"
+        required
+        autofocus
+      />
+      <br />
+      <input
+        type="text"
+        name="Date"
+        #Date="ngModel"
+        [(ngModel)]="service.formData.Date"
+        class="form-control"
+        placeholder="Date"
+        required
+        autofocus
+      />
+      <br />
+      <input
+        type="text"
+        name="Mark"
+        #Mark="ngModel"
+        [(ngModel)]="service.formData.Mark"
+        class="form-control"
+        placeholder="Mark"
+        required
+        autofocus
+      />
+      <br />
+      <button mat-stroked-button color="warn" class="add_btn" type="submit">
+        Dodaj
+      </button>
+    </div>
+  </form>
+</mat-card>

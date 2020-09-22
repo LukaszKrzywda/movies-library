@@ -1,0 +1,11 @@
+<div class="example-button-row">
+  <button mat-raised-button><a routerLink="/table">Tabela</a></button>
+  <button mat-raised-button><a routerLink="/tails">Kafelki</a></button>
+  <button mat-raised-button><a routerLink="/add-movie">Dodaj film</a></button>
+  <button mat-raised-button *ngIf="!isUserAuthenticated()">
+    <a routerLink="/">Login</a>
+  </button>
+  <button mat-raised-button id="logout" (click)="logOut()">
+    <a routerLink="/">Wyloguj</a>
+  </button>
+</div>

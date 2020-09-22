@@ -1,0 +1,27 @@
+.top_bar {
+  margin: auto;
+  width: 10%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+#btn_back {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.mat-grid-tile {
+  cursor: pointer;
+  opacity: 0.8;
+  background-color: seashell;
+}
+
+.mat-grid-tile:hover {
+  opacity: 1;
+}
+
+.napis {
+  letter-spacing: 5px;
+  color: white;
+}

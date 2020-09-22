@@ -1,0 +1,38 @@
+<div class="tabela">
+  <div class="napis">TABELA</div>
+  <button mat-raised-button id="btn_back">
+    <a routerLink="/home">Powrót</a>
+  </button>
+  <button mat-raised-button id="btn_excel" (click)="excelExport()">
+    Excel Export
+  </button>
+</div>
+
+<table class="table" id="excel">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Tytuł</th>
+      <th scope="col">Reżyser</th>
+      <th scope="col">Usuń</th>
+    </tr>
+  </thead>
+  <tbody
+    class="tbody"
+    *ngFor="let movie of service.list"
+    (click)="openDetails(movie.id)"
+  >
+    <tr>
+      <th scope="row">{{ movie.id }}</th>
+      <td>{{ movie.title }}</td>
+      <td>{{ movie.director }}</td>
+      <div>
+        <td>
+          <fa-icon [icon]="faTrashAlt" (click)="onDelete(movie.id)"
+            >Usuń</fa-icon
+          >
+        </td>
+      </div>
+    </tr>
+  </tbody>
+</table>

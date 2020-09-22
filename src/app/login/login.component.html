@@ -1,0 +1,37 @@
+<body>
+  <mat-card class="login_card">
+    <form #loginForm="ngForm" (ngSubmit)="login(loginForm)" class="login_form">
+      <div class="container-fluid">
+        <h2 class="heading_form">Login</h2>
+        <div *ngIf="invalidLogin" class="alert alert-danger">
+          Niepoprawne login lub hasło.
+        </div>
+        <br />
+        <input
+          type="email"
+          id="username"
+          name="username"
+          ngModel
+          class="form-control"
+          placeholder="User Name"
+          required
+          autofocus
+        />
+        <br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          ngModel
+          class="form-control"
+          placeholder="Password"
+          required
+        />
+        <br />
+        <button class="btn btn-lg btn-primary btn-block" type="submit">
+          Zaloguj
+        </button>
+      </div>
+    </form>
+  </mat-card>
+</body>

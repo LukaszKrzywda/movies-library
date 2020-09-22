@@ -1,0 +1,28 @@
+.tabela {
+  margin: auto;
+  width: 10%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+#btn_back {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.tbody:hover {
+  cursor: pointer;
+  background-color: seashell;
+}
+
+#btn_excel {
+  position: absolute;
+  left: 10px;
+  top: 5px;
+}
+
+.napis {
+  letter-spacing: 5px;
+  color: white;
+}

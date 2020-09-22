@@ -1,0 +1,25 @@
+.details_card {
+  /* align-items: center; */
+  max-width: 400px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 10px;
+}
+
+.p {
+  margin-left: 2px;
+}
+.mat-card-header {
+  position: relative;
+  right: -80px;
+}
+
+.mat-card {
+  box-shadow: 10px 10px 5px grey;
+  border-radius: 10px;
+  border-style: solid;
+}
+
+.mat-button {
+  color: #000;
+}

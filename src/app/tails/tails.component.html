@@ -1,0 +1,22 @@
+<div class="top_bar">
+  <div class="napis">KAFELKI</div>
+  <button mat-raised-button id="btn_back">
+    <a routerLink="/home">Powrót</a>
+  </button>
+</div>
+
+<mat-grid-list cols="3" rowHeight="200px" gutterSize="5px">
+  <mat-grid-tile *ngFor="let movie of service.list">
+    <mat-grid-list cols="2" rowHeight="200px" style="width: 100%; height: 100%">
+      <mat-grid-tile>
+        <fa-icon [icon]="faTrashAlt" (click)="onDelete(movie.id)">Usuń</fa-icon>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="opis" (click)="openDetails(movie.id)">
+          <div>Tytuł: {{ movie.title }}</div>
+          <div>Reżyser: {{ movie.director }}</div>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-grid-tile>
+</mat-grid-list>
