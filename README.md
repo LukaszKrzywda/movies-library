@@ -1,6 +1,5 @@
 # AngularApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
 Założeniem projektu było stworzenie biblioteki filmów. 
 Użytkownik po zalogowaniu się ma możliwość przeglądania bazy filmów w formie tabeli lub kafelek.
 Administrator po zalogowaniu się ma możliwość dodawania i usuwania filmów z bazy danych. 
